@@ -1,0 +1,464 @@
+<?php $layout = $this->layout(); ?>
+<div class="main-wrapper">
+    <div class="main-content">
+        <div id="hints-wrapper">
+        </div>
+        <script>MenuManager.activateSubMenuByText('Todos');</script>
+        <div class="section-wrapper">
+            <div class="header">
+                <div class="title">
+                    <h1>Nuevo contacto</h1>
+                </div>
+                <div class="actions"></div>
+            </div>
+            <div class="content"></div>
+        </div>
+
+        <div id="generalContainer">
+            <div id="addClient">
+            <form method="POST" action="/rest/post/">
+                <div class="x-panel x-panel-default" style="margin-bottom: 10px; height: 291px;" id="client_FormAdd-1037">
+                    <div id="client_FormAdd-1037-body" class="x-panel-body x-panel-body-default x-box-layout-ct x-panel-body-default" style="padding: 30px; width: 1024px; left: 0px; top: 0px; height: 291px;">
+                        <div id="client_FormAdd-1037-innerCt" class="x-box-inner " role="presentation" style="width: 962px; height: 229px;">
+                            <div id="client_FormAdd-1037-targetEl" class="x-box-target" style="width: 962px;">
+                                <div class="x-container x-box-item x-container-default" id="container-1038" style="right: auto; left: 0px; margin: 0px; width: 458px; top: 0px;">
+                                    <span id="container-1038-outerCt" style="display: table; width: 100%; table-layout: fixed;">
+                                        <div id="container-1038-innerCt" style="display:table-cell;height:100%;vertical-align:top;" class="">
+                                            <table class="x-field x-table-plain x-form-item x-field-default x-autocontainer-form-item" style="width: 395px; table-layout: fixed;"
+                                                cellpadding="0" id="clientNameTextField">
+                                                <tbody>
+                                                    <tr id="clientNameTextField-inputRow">
+                                                        <td id="clientNameTextField-labelCell" style="" valign="top" halign="right" width="155" class="x-field-label-cell">
+                                                            <label id="clientNameTextField-labelEl" name="name" for="clientNameTextField-inputEl" class="x-form-item-label x-unselectable x-form-item-label-right"
+                                                                style="width:140px;margin-right:15px;" unselectable="on">Nombre
+                                                                <span class="req">*</span>
+                                                            </label>
+                                                        </td>
+                                                        <td class="x-form-item-body " id="clientNameTextField-bodyEl" colspan="2" role="presentation" style="width: 100%;">
+                                                            <input id="clientNameTextField-inputEl" name="name" type="text" size="1" class="x-form-field x-form-required-field x-form-text" autocomplete="off" aria-invalid="false" style="width: 100%;">
+                                                        </td>
+                                                        <td id="clientNameTextField-sideErrorCell" valign="middle" style="display: none;" width="17">
+                                                            <div id="clientNameTextField-errorEl" class="x-form-error-msg x-form-invalid-icon" style="display:none" data-errorqtip=""></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="x-field x-table-plain x-form-item x-field-default x-autocontainer-form-item" style="width: 395px; display: none;"
+                                                cellpadding="0" id="combobox-1039">
+                                                <tbody>
+                                                    <tr id="combobox-1039-inputRow">
+                                                        <td id="combobox-1039-labelCell" style="" valign="top" halign="right" width="155" class="x-field-label-cell">
+                                                            <label id="combobox-1039-labelEl" for="combobox-1039-inputEl" class="x-form-item-label x-unselectable" style="width:140px;margin-right:15px;"
+                                                                unselectable="on">Tipo de identificación</label>
+                                                        </td>
+                                                        <td class="x-form-item-body " id="combobox-1039-bodyEl" colspan="2" role="presentation">
+                                                            <table id="combobox-1039-triggerWrap" class="x-form-trigger-wrap" cellpadding="0" cellspacing="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td id="combobox-1039-inputCell" class="x-form-trigger-input-cell">
+                                                                            <div class="x-hide-display x-form-data-hidden" role="presentation" id="ext-gen1120"></div>
+                                                                            <input id="combobox-1039-inputEl" type="text" class="x-form-field x-form-empty-field x-form-text x-trigger-noedit" autocomplete="off"
+                                                                                name="identificationType" placeholder="Seleccionar"
+                                                                                readonly="readonly" aria-invalid="false">
+                                                                        </td>
+                                                                        <td valign="top" class=" x-trigger-cell x-unselectable" style="width:17px;" id="ext-gen1119">
+                                                                            <div class="x-trigger-index-0 x-form-trigger x-form-arrow-trigger x-form-trigger-first" role="button" id="ext-gen1118"></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td id="combobox-1039-sideErrorCell" valign="middle" style="" width="17">
+                                                            <div id="combobox-1039-errorEl" class="x-form-error-msg" style="display:none"></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="x-field x-table-plain x-form-item x-field-default x-autocontainer-form-item" style="width: 395px; table-layout: fixed;"
+                                                cellpadding="0" id="clientIdentidicationTextField">
+                                                <tbody>
+                                                    <tr id="clientIdentidicationTextField-inputRow">
+                                                        <td id="clientIdentidicationTextField-labelCell" style="" valign="top" halign="right" width="155" class="x-field-label-cell">
+                                                            <label id="clientIdentidicationTextField-labelEl" for="clientIdentidicationTextField-inputEl" class="x-form-item-label x-unselectable x-form-item-label-right"
+                                                                style="width:140px;margin-right:15px;" unselectable="on">Identificación</label>
+                                                        </td>
+                                                        <td class="x-form-item-body " id="clientIdentidicationTextField-bodyEl" colspan="2" role="presentation" style="width: 100%;">
+                                                            <input id="clientIdentidicationTextField-inputEl" name="identification" type="text" size="1" class="x-form-field x-form-text"
+                                                                autocomplete="off" aria-invalid="false" style="width: 100%;">
+                                                        </td>
+                                                        <td id="clientIdentidicationTextField-sideErrorCell" valign="middle" style="display: none;" width="17">
+                                                            <div id="clientIdentidicationTextField-errorEl" class="x-form-error-msg x-form-invalid-icon" style="display:none" data-errorqtip=""></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="x-field x-table-plain x-form-item x-field-default x-autocontainer-form-item" style="width: 395px; display: none;"
+                                                cellpadding="0" id="clientNiteTextField">
+                                                <tbody>
+                                                    <tr id="clientNiteTextField-inputRow">
+                                                        <td id="clientNiteTextField-labelCell" style="" valign="top" halign="right" width="155" class="x-field-label-cell">
+                                                            <label id="clientNiteTextField-labelEl" for="clientNiteTextField-inputEl" class="x-form-item-label x-unselectable" style="width:140px;margin-right:15px;"
+                                                                unselectable="on">NITE</label>
+                                                        </td>
+                                                        <td class="x-form-item-body " id="clientNiteTextField-bodyEl" colspan="2" role="presentation">
+                                                            <input id="clientNiteTextField-inputEl" type="text" size="1" name="cr_nite" class="x-form-field x-form-text" autocomplete="off"
+                                                                aria-invalid="false">
+                                                        </td>
+                                                        <td id="clientNiteTextField-sideErrorCell" valign="middle" style="" width="17">
+                                                            <div id="clientNiteTextField-errorEl" class="x-form-error-msg" style="display:none"></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="x-panel x-panel-default" style="width: 395px; height: 30px;" id="addressField-1040">
+                                                <div id="addressField-1040-body" class="x-panel-body x-panel-body-default x-table-layout-ct x-panel-body-default x-docked-noborder-top x-docked-noborder-right x-docked-noborder-bottom x-docked-noborder-left"
+                                                    style="width: 395px; left: 0px; top: 0px; height: 30px;">
+                                                    <table role="presentation" class="x-table-layout" cellspacing="0" cellpadding="0" id="ext-gen1145">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td valign="top" colspan="1" rowspan="5" id="" class="x-table-layout-cell ">
+                                                                    <table class="x-field x-table-plain x-form-item x-field-default x-table-form-item" style="margin: 0px 0px 8px 5px; width: 132px; table-layout: fixed;"
+                                                                        cellpadding="0" id="displayfield-1041">
+                                                                        <tbody>
+                                                                            <tr id="displayfield-1041-inputRow">
+                                                                                <td id="displayfield-1041-labelCell" style="" valign="top" halign="right" width="146" class="x-field-label-cell">
+                                                                                    <label id="displayfield-1041-labelEl" for="displayfield-1041-inputEl" class="x-form-item-label x-unselectable x-form-item-label-right"
+                                                                                        style="width:132px;margin-right:14px;"
+                                                                                        unselectable="on">Dirección</label>
+                                                                                </td>
+                                                                                <td class="x-form-item-body " id="displayfield-1041-bodyEl" colspan="2" role="presentation" style="width: 100%;">
+                                                                                    <div id="displayfield-1041-inputEl" class="x-form-display-field" aria-invalid="false" data-errorqtip="" style="width: 100%;"></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td valign="top" colspan="1" rowspan="1" id="" class="x-table-layout-cell ">
+                                                                    <table class="x-field x-table-plain x-form-item x-field-default x-table-form-item" style="margin: 0px 0px 8px 5px; table-layout: fixed;"
+                                                                        cellpadding="0" id="textfield-1042">
+                                                                        <tbody>
+                                                                            <tr id="textfield-1042-inputRow">
+                                                                                <td id="textfield-1042-labelCell" style="display:none;" valign="top" halign="left" width="105" class="x-field-label-cell">
+                                                                                    <label id="textfield-1042-labelEl" for="textfield-1042-inputEl" class="x-form-item-label x-unselectable x-form-item-label-left"
+                                                                                        style="width:100px;margin-right:5px;"
+                                                                                        unselectable="on"></label>
+                                                                                </td>
+                                                                                <td class="x-form-item-body " id="textfield-1042-bodyEl" colspan="3" role="presentation" style="width: 150px;">
+                                                                                    <input id="textfield-1042-inputEl" type="text" size="1" name="address" placeholder="Dirección" class="x-form-field x-form-empty-field x-form-text"
+                                                                                        autocomplete="off" aria-invalid="false"
+                                                                                        data-errorqtip="" style="width: 100%;">
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td valign="top" colspan="1" rowspan="1" id="" class="x-table-layout-cell ">
+                                                                    <table class="x-field x-table-plain x-form-item x-field-default x-table-form-item" style="margin: 0px 0px 8px 5px; table-layout: fixed;"
+                                                                        cellpadding="0" id="textfield-1044">
+                                                                        <tbody>
+                                                                            <tr id="textfield-1044-inputRow">
+                                                                                <td id="textfield-1044-labelCell" style="display:none;" valign="top" halign="left" width="105" class="x-field-label-cell">
+                                                                                    <label id="textfield-1044-labelEl" for="textfield-1044-inputEl" class="x-form-item-label x-unselectable x-form-item-label-left"
+                                                                                        style="width:100px;margin-right:5px;"
+                                                                                        unselectable="on"></label>
+                                                                                </td>
+                                                                                <td class="x-form-item-body " id="textfield-1044-bodyEl" colspan="3" role="presentation" style="width: 150px;">
+                                                                                    <input id="textfield-1044-inputEl" type="text" size="1" name="city" placeholder="Ciudad" class="x-form-field x-form-empty-field x-form-text"
+                                                                                        autocomplete="off" aria-invalid="false"
+                                                                                        data-errorqtip="" style="width: 100%;">
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <table class="x-field x-table-plain x-form-item x-field-default x-autocontainer-form-item" style="width: 395px; table-layout: fixed;"
+                                                cellpadding="0" id="clientEmailField">
+                                                <tbody>
+                                                    <tr id="clientEmailField-inputRow">
+                                                        <td id="clientEmailField-labelCell" style="" valign="top" halign="right" width="155" class="x-field-label-cell">
+                                                            <label id="clientEmailField-labelEl" for="clientEmailField-inputEl" class="x-form-item-label x-unselectable x-form-item-label-right"
+                                                                style="width:140px;margin-right:15px;" unselectable="on">Correo electrónico</label>
+                                                        </td>
+                                                        <td class="x-form-item-body " id="clientEmailField-bodyEl" colspan="2" role="presentation" style="width: 100%;">
+                                                            <input id="clientEmailField-inputEl" type="text" size="1" name="email" class="x-form-field x-form-text" autocomplete="off"
+                                                                aria-invalid="false" style="width: 100%;">
+                                                        </td>
+                                                        <td id="clientEmailField-sideErrorCell" valign="middle" style="display: none;" width="17">
+                                                            <div id="clientEmailField-errorEl" class="x-form-error-msg x-form-invalid-icon" style="display:none" data-errorqtip=""></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="x-field x-table-plain x-form-item x-field-default x-autocontainer-form-item" style="width: 395px; table-layout: fixed;"
+                                                cellpadding="0" id="clientPhoneTextField">
+                                                <tbody>
+                                                    <tr id="clientPhoneTextField-inputRow">
+                                                        <td id="clientPhoneTextField-labelCell" style="" valign="top" halign="right" width="155" class="x-field-label-cell">
+                                                            <label id="clientPhoneTextField-labelEl" for="clientPhoneTextField-inputEl" class="x-form-item-label x-unselectable x-form-item-label-right"
+                                                                style="width:140px;margin-right:15px;" unselectable="on">Teléfono 1</label>
+                                                        </td>
+                                                        <td class="x-form-item-body " id="clientPhoneTextField-bodyEl" colspan="2" role="presentation" style="width: 100%;">
+                                                            <input id="clientPhoneTextField-inputEl" type="text" size="1" name="phone1" class="x-form-field x-form-text" autocomplete="off"
+                                                                aria-invalid="false" style="width: 100%;">
+                                                        </td>
+                                                        <td id="clientPhoneTextField-sideErrorCell" valign="middle" style="display: none;" width="17">
+                                                            <div id="clientPhoneTextField-errorEl" class="x-form-error-msg x-form-invalid-icon" style="display:none" data-errorqtip=""></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="x-field x-table-plain x-form-item x-field-default x-autocontainer-form-item" style="width: 395px; table-layout: fixed;"
+                                                cellpadding="0" id="textfield-1048">
+                                                <tbody>
+                                                    <tr id="textfield-1048-inputRow">
+                                                        <td id="textfield-1048-labelCell" style="" valign="top" halign="right" width="155" class="x-field-label-cell">
+                                                            <label id="textfield-1048-labelEl" for="textfield-1048-inputEl" class="x-form-item-label x-unselectable x-form-item-label-right"
+                                                                style="width:140px;margin-right:15px;" unselectable="on">Teléfono 2</label>
+                                                        </td>
+                                                        <td class="x-form-item-body " id="textfield-1048-bodyEl" colspan="2" role="presentation" style="width: 100%;">
+                                                            <input id="textfield-1048-inputEl" type="text" size="1" name="phone2" class="x-form-field x-form-text" autocomplete="off"
+                                                                aria-invalid="false" style="width: 100%;">
+                                                        </td>
+                                                        <td id="textfield-1048-sideErrorCell" valign="middle" style="display: none;" width="17">
+                                                            <div id="textfield-1048-errorEl" class="x-form-error-msg x-form-invalid-icon" style="display:none" data-errorqtip=""></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="x-field x-table-plain x-form-item x-field-default x-autocontainer-form-item" style="width: 395px; table-layout: fixed;"
+                                                cellpadding="0" id="textfield-1049">
+                                                <tbody>
+                                                    <tr id="textfield-1049-inputRow">
+                                                        <td id="textfield-1049-labelCell" style="" valign="top" halign="right" width="155" class="x-field-label-cell">
+                                                            <label id="textfield-1049-labelEl" for="textfield-1049-inputEl" class="x-form-item-label x-unselectable x-form-item-label-right"
+                                                                style="width:140px;margin-right:15px;" unselectable="on">Fax</label>
+                                                        </td>
+                                                        <td class="x-form-item-body " id="textfield-1049-bodyEl" colspan="2" role="presentation" style="width: 100%;">
+                                                            <input id="textfield-1049-inputEl" type="text" size="1" name="fax" class="x-form-field x-form-text" autocomplete="off" aria-invalid="false"
+                                                                style="width: 100%;">
+                                                        </td>
+                                                        <td id="textfield-1049-sideErrorCell" valign="middle" style="display: none;" width="17">
+                                                            <div id="textfield-1049-errorEl" class="x-form-error-msg x-form-invalid-icon" style="display:none" data-errorqtip=""></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="x-field x-table-plain x-form-item x-field-default x-autocontainer-form-item" style="width: 395px; table-layout: fixed;"
+                                                cellpadding="0" id="textfield-1050">
+                                                <tbody>
+                                                    <tr id="textfield-1050-inputRow">
+                                                        <td id="textfield-1050-labelCell" style="" valign="top" halign="right" width="155" class="x-field-label-cell">
+                                                            <label id="textfield-1050-labelEl" for="textfield-1050-inputEl" class="x-form-item-label x-unselectable x-form-item-label-right"
+                                                                style="width:140px;margin-right:15px;" unselectable="on">Celular</label>
+                                                        </td>
+                                                        <td class="x-form-item-body " id="textfield-1050-bodyEl" colspan="2" role="presentation" style="width: 100%;">
+                                                            <input id="textfield-1050-inputEl" type="text" size="1" name="mobile" class="x-form-field x-form-text" autocomplete="off"
+                                                                aria-invalid="false" style="width: 100%;">
+                                                        </td>
+                                                        <td id="textfield-1050-sideErrorCell" valign="middle" style="display: none;" width="17">
+                                                            <div id="textfield-1050-errorEl" class="x-form-error-msg x-form-invalid-icon" style="display:none" data-errorqtip=""></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="x-container x-box-item x-container-default" id="container-1051" style="right: auto; left: 458px; margin: 0px; width: 504px; top: 0px;">
+                                    <span id="container-1051-outerCt" style="display: table; width: 100%; table-layout: fixed;">
+                                        <div id="container-1051-innerCt" style="display:table-cell;height:100%;vertical-align:top;" class="">
+                                            <table class="x-field x-table-plain x-form-item x-field-default x-autocontainer-form-item" style="width: 370px; table-layout: fixed;"
+                                                cellpadding="0" id="combobox-1052">
+                                                <tbody>
+                                                    <tr id="combobox-1052-inputRow">
+                                                        
+                                                   
+                                                        <td id="clientTermsCombo-sideErrorCell" valign="middle" style="display: none;" width="17">
+                                                            <div id="clientTermsCombo-errorEl" class="x-form-error-msg x-form-invalid-icon" style="display:none" data-errorqtip=""></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="x-field x-table-plain x-form-item x-field-default x-autocontainer-form-item" style="width: 370px; display: none;"
+                                                cellpadding="0" id="combobox-1054">
+                                                <tbody>
+                                                    <tr id="combobox-1054-inputRow">
+                                                        <td id="combobox-1054-labelCell" style="" valign="top" halign="right" width="145" class="x-field-label-cell">
+                                                            <label id="combobox-1054-labelEl" for="combobox-1054-inputEl" class="x-form-item-label x-unselectable" style="width:130px;margin-right:15px;"
+                                                                unselectable="on">Uso CFDI</label>
+                                                        </td>
+                                                        <td class="x-form-item-body " id="combobox-1054-bodyEl" colspan="2" role="presentation">
+                                                            <table id="combobox-1054-triggerWrap" class="x-form-trigger-wrap" cellpadding="0" cellspacing="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td id="combobox-1054-inputCell" class="x-form-trigger-input-cell">
+                                                                            <div class="x-hide-display x-form-data-hidden" role="presentation" id="ext-gen1139"></div>
+                                                                            <input id="combobox-1054-inputEl" type="text" class="x-form-field x-form-empty-field x-form-text x-trigger-noedit" autocomplete="off"
+                                                                                name="CFDIuse" placeholder="Seleccionar" readonly="readonly"
+                                                                                aria-invalid="false">
+                                                                        </td>
+                                                                        <td valign="top" class=" x-trigger-cell x-unselectable" style="width:17px;" id="ext-gen1138">
+                                                                            <div class="x-trigger-index-0 x-form-trigger x-form-arrow-trigger x-form-trigger-first" role="button" id="ext-gen1137"></div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td id="combobox-1054-sideErrorCell" valign="middle" style="" width="17">
+                                                            <div id="combobox-1054-errorEl" class="x-form-error-msg" style="display:none"></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="x-field x-table-plain x-form-item x-field-default x-autocontainer-form-item" style="width: 370px; table-layout: fixed;"
+                                                cellpadding="0" id="clientIsClientCheckBox">
+                                                <tbody>
+                                                    <tr id="clientIsClientCheckBox-inputRow">
+                                                        <td id="clientIsClientCheckBox-labelCell" style="" valign="top" halign="right" width="145" class="x-field-label-cell">
+                                                            <label id="clientIsClientCheckBox-labelEl" for="clientIsClientCheckBox-inputEl" class="x-form-item-label x-unselectable x-form-item-label-right"
+                                                                style="width:130px;margin-right:15px;" unselectable="on">Cliente</label>
+                                                        </td>
+                                                        <td class="x-form-item-body x-form-cb-wrap" id="clientIsClientCheckBox-bodyEl" colspan="2" role="presentation" style="width: 100%;">
+                                                            <!-- check clienisclient -->
+                                                            <input type="radio" name="contactType" value="client" id="clientIsClientCheckBox-inputEl" class="x-form-field x-form-checkbox x-form-cb" autocomplete="off"
+                                                                hidefocus="true" aria-invalid="false">
+                                                        </td>
+                                                        <td id="clientIsClientCheckBox-sideErrorCell" valign="middle" style="display: none;" width="17">
+                                                            <div id="clientIsClientCheckBox-errorEl" class="x-form-error-msg x-form-invalid-icon" style="display:none" data-errorqtip=""></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="x-field x-table-plain x-form-item x-field-default x-autocontainer-form-item" style="width: 370px; table-layout: fixed;"
+                                                cellpadding="0" id="checkboxfield-1055">
+                                                <tbody>
+                                                    <tr id="checkboxfield-1055-inputRow">
+                                                        <td id="checkboxfield-1055-labelCell" style="" valign="top" halign="right" width="145" class="x-field-label-cell">
+                                                            <label id="checkboxfield-1055-labelEl" for="checkboxfield-1055-inputEl" class="x-form-item-label x-unselectable x-form-item-label-right"
+                                                                style="width:130px;margin-right:15px;" unselectable="on">Proveedor</label>
+                                                        </td>
+                                                        <td class="x-form-item-body x-form-cb-wrap" id="checkboxfield-1055-bodyEl" colspan="2" role="presentation" style="width: 100%;">
+                                                            <input type="radio" name="contactType" value="provider" id="checkboxfield-1055-inputEl" class="x-form-field x-form-checkbox x-form-cb" autocomplete="off" hidefocus="true"
+                                                                aria-invalid="false">
+                                                        </td>
+                                                        <td id="checkboxfield-1055-sideErrorCell" valign="middle" style="display: none;" width="17">
+                                                            <div id="checkboxfield-1055-errorEl" class="x-form-error-msg x-form-invalid-icon" style="display:none" data-errorqtip=""></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="x-field x-table-plain x-form-item x-field-default x-autocontainer-form-item" style="width: 370px; table-layout: fixed;"
+                                                cellpadding="0" id="clientObservationsTextArea">
+                                                <tbody>
+                                                    <tr id="clientObservationsTextArea-inputRow">
+                                                        <td id="clientObservationsTextArea-labelCell" style="" valign="top" halign="right" width="145" class="x-field-label-cell">
+                                                            <label id="clientObservationsTextArea-labelEl" for="clientObservationsTextArea-inputEl" class="x-form-item-label x-unselectable x-form-item-label-right"
+                                                                style="width:130px;margin-right:15px;" unselectable="on">Observaciones</label>
+                                                        </td>
+                                                        <td class="x-form-item-body " id="clientObservationsTextArea-bodyEl" colspan="2" role="presentation" style="width: 100%;">
+                                                            <textarea id="clientObservationsTextArea-inputEl" name="observations" rows="4" cols="20" class="x-form-field x-form-text x-form-textarea"
+                                                                autocomplete="off" aria-invalid="false" style="width: 100%;"></textarea>
+                                                        </td>
+                                                        <td id="clientObservationsTextArea-sideErrorCell" valign="middle" style="display: none;" width="17">
+                                                            <div id="clientObservationsTextArea-errorEl" class="x-form-error-msg x-form-invalid-icon" style="display:none" data-errorqtip=""></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                           
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="x-btn-button" type="submit" target="/">Crear</button>
+                <button type="reset">Limpiar</button>
+            </form>
+            </div>
+            <div class="required-anotation">Los campos marcados con
+                <span class="req no-padding">*</span> son obligatorios</div>
+        </div>
+        
+<!--         
+        <form method="get" action="/rest/get/id/1">
+            <button type="submit">Ver contacto 1</button>
+        </form> -->
+
+        <?php foreach ($this->books as $key => $val): ?>
+        <tr>
+            <td><?php echo $this->escape($val['author']) ?></td>
+            <td><?php echo $this->escape($val['title']) ?></td>
+        </tr>
+        <?php endforeach; ?>
+        <!-- 
+            ejercicio:  crear un iterador que construya varios botones, donde cada boton devuelva 
+                        una forma de ver al usuario asociado con el numero del boton
+            hint: usar Foreach.
+        -->
+
+
+
+        
+        
+        <!-- 
+            
+        <script>
+            Ext.application({
+                name: 'AL',
+                appFolder: '/js/app/app',
+                controllers: ['Client'],
+                launch: function () {
+
+                    Ext.create('AL.view.client.FormAdd', {
+                        renderTo: 'addClient',
+                        clientType: null,
+                        country: 'other',
+                        hideSettingStatement: true,
+                        title: '',
+                        mxStampVersion: ''
+                    });
+                    Ext.create('Ext.panel.Panel', {
+                        id: 'addContactPanel',
+                        renderTo: 'addContact',
+                        alias: 'contactsSoldPanel',
+                        items: [{
+                            xtype: 'box',
+                            height: 24,
+                            html: '<div  id="headersTable"><table><tr><td class="tbName">Nombre</td><td class="tbLastName">Apellido</td><td class="tbEmail">Correo electrónico</td><td class="tbPhone">Teléfono</td><td class="tbMobile">Celular</td><td class="tbSendNotifications" style="width:133px">Enviar notificaciones<img style="position:absolute; top:3px; margin-left:4px" id="tooltip_notifications" src="https://cdn1.alegra.com/images/icons/help.png" /> </td></tr></table></div>',
+                            style: 'background: #eee'
+                        },
+                        Ext.create('AL.view.client.FormAddContact')
+                        ]
+                    });
+                    Ext.create('AL.view.buttons.SubmitCreate', {
+                        renderTo: 'buttonsHolder',
+                        buttonsConfig: {
+                            submitButtonAction: 'saveClient',
+                            submitButtonText: 'Guardar',
+                            createButtonAction: 'saveCreateClient',
+                            createButtonText: 'Guardar y crear otro'
+                        }
+                    });
+                    var tip = Ext.create('Ext.tip.ToolTip', {
+                        target: 'tooltip_notifications',
+                        html: 'Marque esta opción cuando necesite que esta persona reciba correos con alertas sobre facturas disponibles y/o vencidas'
+                    });
+                }
+            });
+        </script> -->
+
+
+    </div>
+
+</div>
+
+<!-- <script type="text/javascript" src="<?php echo $this->baseUrl('js/models/contact.js'); ?>"></script>
+
+<script type="text/javascript" src="<?php echo $this->baseUrl('js/views/addview.js'); ?>"></script>  -->

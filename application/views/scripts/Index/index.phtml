@@ -1,0 +1,557 @@
+<div class="main-wrapper">
+            <div class="main-content">
+                
+                <div class="section-wrapper">
+                    <div class="header">
+                        <div class="title">
+                            <h1>Contactos</h1>
+                        </div>
+                        <div class="actions">
+                            <a href="<?php echo $this->baseUrl('client/client'); ?>" class="button green">
+                                <span class="plus"></span>Nuevo contacto</a>
+                            <style>
+                                .section-wrapper .header {
+                                    position: relative
+                                }
+                            </style>
+                        </div>
+                    </div>
+                    <div class="content"></div>
+                </div>
+                <div id="tooltip-many-selections" class="tooltip-wrapper" style="margin-left: -347px; margin-top: 158px; z-index: 11; display: none;">
+                    <img class="tooltip" src="./Contactos_files/help.png">
+                    <div class="tooltip-text-container" style="margin-top: -35px; margin-left: -100px">
+                        <div class="tooltip-text-wrapper">
+                            <div class="text" style="margin: 1px;">Para conocer más sobre la selección múltiple, haz
+                                <a target="_blank" href="http://ayuda.alegra.com/hc/es/articles/115000604206-Selecci%C3%B3n-M%C3%BAltiple-para-Operaciones-Masivas">
+                                clic aquí</a>.</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="gridClients">
+                    <div class="x-panel grid-contacts grid-with-icons x-grid-with-col-lines x-grid-with-row-lines x-panel-default-framed x-grid"
+                        id="client_GridAllClients-1036" style="height: 390px;">
+                        <div class="x-toolbar operations-toolbar gridplugintoolbar x-docked x-toolbar-default x-docked-top x-toolbar-docked-top x-toolbar-default-docked-top x-box-layout-ct"
+                            id="toolbar-1085" style="display: none;">
+                            <div id="toolbar-1085-innerCt" class="x-box-inner " role="presentation">
+                                <div id="toolbar-1085-targetEl" class="x-box-target">
+                                    <label class="x-component selected-records-label x-box-item x-toolbar-item x-component-default"
+                                        style="text-align:right;line-height:22px;color:#777;margin-left:10px;" id="label-1086"
+                                        for="">
+                                        <b>Seleccionados: </b>0</label>
+                                    <div class="x-component x-box-item x-toolbar-item x-component-default"
+                                        style="height:0px;" id="tbfill-1087"></div>
+                                    <div class="x-btn operationButton x-unselectable x-item-disabled x-box-item x-toolbar-item x-btn-default-toolbar-small x-disabled x-btn-disabled x-btn-default-toolbar-small-disabled x-icon-text-left x-btn-icon-text-left x-btn-default-toolbar-small-icon-text-left"
+                                        style="border-width:1px;" id="button-1088">
+                                        <div id="button-1088-btnWrap" class="x-btn-wrap" unselectable="on">
+                                            <a id="button-1088-btnEl" class="x-btn-button" role="button" hidefocus="on" unselectable="on"
+                                                tabindex="0">
+                                                <span id="button-1088-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">Eliminar</span>
+                                                <span role="img" id="button-1088-btnIconEl" class="x-btn-icon-el  "
+                                                    unselectable="on" style="background-image:url(/resources/images/delete.png);">&nbsp;</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="x-btn x-unselectable x-box-item x-toolbar-item x-btn-default-toolbar-small x-noicon x-btn-noicon x-btn-default-toolbar-small-noicon"
+                                        style="border-width: 1px; display: none;" id="button-1089">
+                                        <div id="button-1089-btnWrap" class="x-btn-wrap" unselectable="on">
+                                            <a id="button-1089-btnEl" class="x-btn-button" role="button" hidefocus="on" unselectable="on"
+                                                tabindex="0">
+                                                <span id="button-1089-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">Cerrar</span>
+                                                <span role="img" id="button-1089-btnIconEl" class="x-btn-icon-el  "
+                                                    unselectable="on" style=""></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="x-toolbar filters-toolbar gridplugintoolbar x-docked x-toolbar-default x-docked-top x-toolbar-docked-top x-toolbar-default-docked-top x-box-layout-ct"
+                            id="toolbar-1074" style="display: none;">
+                            <div id="toolbar-1074-innerCt" class="x-box-inner " role="presentation">
+                                <div id="toolbar-1074-targetEl" class="x-box-target">
+                                    <div class="x-panel grid-filter-form x-box-item x-toolbar-item x-panel-default" style="height:22px;"
+                                        id="form-1075">
+                                        <div id="form-1075-body" class="x-panel-body x-panel-body-default x-column-layout-ct x-panel-body-default"
+                                            style="background-color:transparent;">
+                                            <span id="form-1075-outerCt" style="display:table;">
+                                                <div id="form-1075-innerCt" style="display:table-cell;height:100%;vertical-align:top;"
+                                                    class="">
+                                                    <table class="x-container x-form-fieldcontainer x-table-plain x-form-item x-column x-container-default x-column-form-item"
+                                                        cellpadding="0" id="fieldcontainer-1076">
+                                                        <tbody>
+                                                            <tr id="fieldcontainer-1076-inputRow">
+                                                                <td id="fieldcontainer-1076-labelCell" style="display:none;"
+                                                                    valign="top" halign="left" width="105" class="x-field-label-cell">
+                                                                    <label id="fieldcontainer-1076-labelEl" class="x-form-item-label x-unselectable"
+                                                                        style="width:100px;margin-right:5px;" unselectable="on"></label>
+                                                                </td>
+                                                                <td class="x-form-item-body " id="fieldcontainer-1076-bodyEl"
+                                                                    colspan="3" role="presentation">
+                                                                    <div id="fieldcontainer-1076-containerEl" class="x-box-layout-ct">
+                                                                        <div id="fieldcontainer-1076-innerCt" class="x-box-inner "
+                                                                            role="presentation">
+                                                                            <div id="fieldcontainer-1076-targetEl" class="x-box-target">
+                                                                                <table class="x-field x-table-plain x-form-item x-box-item x-field-default x-hbox-form-item"
+                                                                                    style="margin:0px 0px 0px 0px;width:30px;"
+                                                                                    cellpadding="0" id="displayfield-1077">
+                                                                                    <tbody>
+                                                                                        <tr id="displayfield-1077-inputRow">
+                                                                                            <td id="displayfield-1077-labelCell"
+                                                                                                style="display:none;" valign="top"
+                                                                                                halign="left" width="105" class="x-field-label-cell">
+                                                                                                <label id="displayfield-1077-labelEl"
+                                                                                                    for="displayfield-1077-inputEl"
+                                                                                                    class="x-form-item-label x-unselectable"
+                                                                                                    style="width:100px;margin-right:5px;"
+                                                                                                    unselectable="on"></label>
+                                                                                            </td>
+                                                                                            <td class="x-form-item-body "
+                                                                                                id="displayfield-1077-bodyEl"
+                                                                                                colspan="3" role="presentation">
+                                                                                                <div id="displayfield-1077-inputEl"
+                                                                                                    class="x-form-display-field"
+                                                                                                    aria-invalid="false"></div>
+                                                                                            </td>
+                                                                                            <td id="displayfield-1077-sideErrorCell"
+                                                                                                valign="middle" style="" width="17">
+                                                                                                <div id="displayfield-1077-errorEl"
+                                                                                                    class="x-form-error-msg"
+                                                                                                    style="display:none"></div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <table class="x-field x-table-plain x-form-item x-box-item x-field-default x-hbox-form-item"
+                                                                                    style="margin:0px 0px 0px 0px;width:300px;"
+                                                                                    cellpadding="0" id="textfield-1078">
+                                                                                    <tbody>
+                                                                                        <tr id="textfield-1078-inputRow">
+                                                                                            <td id="textfield-1078-labelCell"
+                                                                                                style="display:none;" valign="top"
+                                                                                                halign="left" width="105" class="x-field-label-cell">
+                                                                                                <label id="textfield-1078-labelEl"
+                                                                                                    for="textfield-1078-inputEl"
+                                                                                                    class="x-form-item-label x-unselectable"
+                                                                                                    style="width:100px;margin-right:5px;"
+                                                                                                    unselectable="on"></label>
+                                                                                            </td>
+                                                                                            <td class="x-form-item-body "
+                                                                                                id="textfield-1078-bodyEl" colspan="3"
+                                                                                                role="presentation">
+                                                                                                <input id="textfield-1078-inputEl"
+                                                                                                    type="text" size="1" name="name"
+                                                                                                    placeholder="Nombre" class="x-form-field x-form-empty-field x-form-text"
+                                                                                                    autocomplete="off" aria-invalid="false">
+                                                                                            </td>
+                                                                                            <td id="textfield-1078-sideErrorCell"
+                                                                                                valign="middle" style="" width="17">
+                                                                                                <div id="textfield-1078-errorEl"
+                                                                                                    class="x-form-error-msg"
+                                                                                                    style="display:none"></div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <table class="x-field x-table-plain x-form-item x-box-item x-field-default x-hbox-form-item"
+                                                                                    style="margin:0px 0px 0px 0px;" cellpadding="0"
+                                                                                    id="textfield-1079">
+                                                                                    <tbody>
+                                                                                        <tr id="textfield-1079-inputRow">
+                                                                                            <td id="textfield-1079-labelCell"
+                                                                                                style="display:none;" valign="top"
+                                                                                                halign="left" width="105" class="x-field-label-cell">
+                                                                                                <label id="textfield-1079-labelEl"
+                                                                                                    for="textfield-1079-inputEl"
+                                                                                                    class="x-form-item-label x-unselectable"
+                                                                                                    style="width:100px;margin-right:5px;"
+                                                                                                    unselectable="on"></label>
+                                                                                            </td>
+                                                                                            <td class="x-form-item-body "
+                                                                                                id="textfield-1079-bodyEl" colspan="3"
+                                                                                                role="presentation">
+                                                                                                <input id="textfield-1079-inputEl"
+                                                                                                    type="text" size="1" name="identification"
+                                                                                                    placeholder="Identificación"
+                                                                                                    class="x-form-field x-form-empty-field x-form-text"
+                                                                                                    autocomplete="off" aria-invalid="false">
+                                                                                            </td>
+                                                                                            <td id="textfield-1079-sideErrorCell"
+                                                                                                valign="middle" style="" width="17">
+                                                                                                <div id="textfield-1079-errorEl"
+                                                                                                    class="x-form-error-msg"
+                                                                                                    style="display:none"></div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <table class="x-field x-table-plain x-form-item x-box-item x-field-default x-hbox-form-item"
+                                                                                    style="margin:0px 0px 0px 0px;" cellpadding="0"
+                                                                                    id="textfield-1080">
+                                                                                    <tbody>
+                                                                                        <tr id="textfield-1080-inputRow">
+                                                                                            <td id="textfield-1080-labelCell"
+                                                                                                style="display:none;" valign="top"
+                                                                                                halign="left" width="105" class="x-field-label-cell">
+                                                                                                <label id="textfield-1080-labelEl"
+                                                                                                    for="textfield-1080-inputEl"
+                                                                                                    class="x-form-item-label x-unselectable"
+                                                                                                    style="width:100px;margin-right:5px;"
+                                                                                                    unselectable="on"></label>
+                                                                                            </td>
+                                                                                            <td class="x-form-item-body "
+                                                                                                id="textfield-1080-bodyEl" colspan="3"
+                                                                                                role="presentation">
+                                                                                                <input id="textfield-1080-inputEl"
+                                                                                                    type="text" size="1" name="phone1"
+                                                                                                    placeholder="Teléfono 1"
+                                                                                                    class="x-form-field x-form-empty-field x-form-text"
+                                                                                                    autocomplete="off" aria-invalid="false">
+                                                                                            </td>
+                                                                                            <td id="textfield-1080-sideErrorCell"
+                                                                                                valign="middle" style="" width="17">
+                                                                                                <div id="textfield-1080-errorEl"
+                                                                                                    class="x-form-error-msg"
+                                                                                                    style="display:none"></div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                <table class="x-field x-table-plain x-form-item x-box-item x-field-default x-hbox-form-item"
+                                                                                    style="margin:0px 0px 0px 0px;" cellpadding="0"
+                                                                                    id="textfield-1081">
+                                                                                    <tbody>
+                                                                                        <tr id="textfield-1081-inputRow">
+                                                                                            <td id="textfield-1081-labelCell"
+                                                                                                style="display:none;" valign="top"
+                                                                                                halign="left" width="105" class="x-field-label-cell">
+                                                                                                <label id="textfield-1081-labelEl"
+                                                                                                    for="textfield-1081-inputEl"
+                                                                                                    class="x-form-item-label x-unselectable"
+                                                                                                    style="width:100px;margin-right:5px;"
+                                                                                                    unselectable="on"></label>
+                                                                                            </td>
+                                                                                            <td class="x-form-item-body "
+                                                                                                id="textfield-1081-bodyEl" colspan="3"
+                                                                                                role="presentation">
+                                                                                                <input id="textfield-1081-inputEl"
+                                                                                                    type="text" size="1" name="observations"
+                                                                                                    placeholder="Observaciones"
+                                                                                                    class="x-form-field x-form-empty-field x-form-text"
+                                                                                                    autocomplete="off" aria-invalid="false">
+                                                                                            </td>
+                                                                                            <td id="textfield-1081-sideErrorCell"
+                                                                                                valign="middle" style="" width="17">
+                                                                                                <div id="textfield-1081-errorEl"
+                                                                                                    class="x-form-error-msg"
+                                                                                                    style="display:none"></div>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="x-component x-box-item x-toolbar-item x-component-default" style="height:0px;"
+                                        id="tbfill-1082"></div>
+                                    <div class="x-btn x-unselectable x-box-item x-toolbar-item x-btn-default-toolbar-small x-noicon x-btn-noicon x-btn-default-toolbar-small-noicon"
+                                        style="margin:0px 0px 0px 10px;border-width:1px;" id="button-1083">
+                                        <div id="button-1083-btnWrap" class="x-btn-wrap" unselectable="on">
+                                            <a id="button-1083-btnEl" class="x-btn-button" role="button" hidefocus="on" unselectable="on"
+                                                tabindex="0">
+                                                <span id="button-1083-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">Filtrar</span>
+                                                <span role="img" id="button-1083-btnIconEl" class="x-btn-icon-el  "
+                                                    unselectable="on" style=""></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="x-btn x-unselectable x-box-item x-toolbar-item x-btn-default-toolbar-small x-noicon x-btn-noicon x-btn-default-toolbar-small-noicon"
+                                        style="border-width:1px;" id="button-1084">
+                                        <div id="button-1084-btnWrap" class="x-btn-wrap" unselectable="on">
+                                            <a id="button-1084-btnEl" class="x-btn-button" role="button" hidefocus="on" unselectable="on"
+                                                tabindex="0">
+                                                <span id="button-1084-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">Cerrar</span>
+                                                <span role="img" id="button-1084-btnIconEl" class="x-btn-icon-el  "
+                                                    unselectable="on" style=""></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="x-grid-header-ct x-docked x-grid-header-ct-default x-docked-top x-grid-header-ct-docked-top x-grid-header-ct-default-docked-top x-box-layout-ct"
+                            style="border-width: 1px; width: 1016px; right: auto; left: 4px; top: 4px;" id="headercontainer-1037">
+                            <div id="headercontainer-1037-innerCt" class="x-box-inner " role="presentation" style="width: 1031px; height: 25px;">
+                                <div id="headercontainer-1037-targetEl" class="x-box-target" style="width: 1031px;">
+                                    <div class="x-column-header selector-column x-column-header-align-left x-box-item x-column-header-default x-unselectable x-column-header-first"
+                                        style="border-width: 1px; width: 30px; height: auto; right: auto; left: 0px; margin: 0px; top: 0px;"
+                                        id="checkcolumn-1073">
+                                        <div id="checkcolumn-1073-titleEl" class="x-column-header-inner" style="padding-top: 6px; padding-bottom: 7px;">
+                                            <span id="checkcolumn-1073-textEl" class="x-column-header-text">
+                                                <img style="display: inline-block;" class="x-grid-checkcolumn selector-column"
+                                                    id="ext-gen1188">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="x-column-header x-column-header-align-left x-box-item x-column-header-default x-unselectable"
+                                        style="border-width: 1px; width: 300px; right: auto; left: 30px; margin: 0px; top: 0px; height: 25px;"
+                                        id="gridcolumn-1038">
+                                        <div id="gridcolumn-1038-titleEl" class="x-column-header-inner" style="padding-top: 6px; padding-bottom: 7px;">
+                                            <span id="gridcolumn-1038-textEl" class="x-column-header-text">Nombre</span>
+                                        </div>
+                                    </div>
+                                    <div class="x-column-header x-column-header-align-left x-box-item x-column-header-default x-unselectable"
+                                        style="border-width: 1px; right: auto; left: 330px; margin: 0px; width: 178px; top: 0px; height: 25px;"
+                                        id="gridcolumn-1039">
+                                        <div id="gridcolumn-1039-titleEl" class="x-column-header-inner" style="padding-top: 6px; padding-bottom: 7px;">
+                                            <span id="gridcolumn-1039-textEl" class="x-column-header-text">Identificación</span>
+                                        </div>
+                                    </div>
+                                    <div class="x-column-header x-column-header-align-left x-box-item x-column-header-default x-unselectable"
+                                        style="border-width: 1px; right: auto; left: 508px; margin: 0px; width: 178px; top: 0px; height: 25px;"
+                                        id="gridcolumn-1040">
+                                        <div id="gridcolumn-1040-titleEl" class="x-column-header-inner" style="padding-top: 6px; padding-bottom: 7px;">
+                                            <span id="gridcolumn-1040-textEl" class="x-column-header-text">Teléfono 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="x-column-header x-column-header-align-left x-box-item x-column-header-default x-unselectable"
+                                        style="border-width: 1px; right: auto; left: 686px; margin: 0px; width: 178px; top: 0px; height: 25px;"
+                                        id="gridcolumn-1041">
+                                        <div id="gridcolumn-1041-titleEl" class="x-column-header-inner" style="padding-top: 6px; padding-bottom: 7px;">
+                                            <span id="gridcolumn-1041-textEl" class="x-column-header-text">Observaciones</span>
+                                        </div>
+                                    </div>
+                                    <div class="x-column-header x-column-header-align-center x-box-item x-column-header-default x-unselectable x-column-header-last"
+                                        style="border-width: 1px; width: 150px; right: auto; left: 864px; margin: 0px; top: 0px; height: 25px;"
+                                        id="gridcolumn-1042">
+                                        <div id="gridcolumn-1042-titleEl" class="x-column-header-inner" style="padding-top: 6px; padding-bottom: 7px;">
+                                            <span id="gridcolumn-1042-textEl" class="x-column-header-text">Acciones</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table method="get" action="/rest/get">
+                        <div id="client_GridAllClients-1036-body" class="x-panel-body x-grid-body x-panel-body-default-framed x-layout-fit x-panel-body-default-framed"
+                            style="border-top-width: 1px; border-bottom-width: 1px; left: 0px; top: 26px; height: 327px; width: 1016px;">
+                            <div class="x-grid-view x-fit-item x-grid-view-default x-unselectable" id="gridview-1043" tabindex="-1"
+                                style="overflow: auto; margin: 0px; width: 1014px; height: 325px;">
+                                <table id="gridview-1043-table" class="x-gridview-1043-table x-grid-table" border="0" cellspacing="0"
+                                    cellpadding="0" style="width: 1014px;" tabindex="-1">
+                                    <colgroup>
+                                        <col class="x-grid-cell-checkcolumn-1073" style="width:30px">
+                                    </colgroup>
+                                    <colgroup>
+                                        <col class="x-grid-cell-gridcolumn-1038" style="width:300px">
+                                    </colgroup>
+                                    <colgroup>
+                                        <col class="x-grid-cell-gridcolumn-1039" style="width:178px">
+                                    </colgroup>
+                                    <colgroup>
+                                        <col class="x-grid-cell-gridcolumn-1040" style="width:178px">
+                                    </colgroup>
+                                    <colgroup>
+                                        <col class="x-grid-cell-gridcolumn-1041" style="width:178px">
+                                    </colgroup>
+                                    <colgroup>
+                                        <col class="x-grid-cell-gridcolumn-1042" style="width:150px">
+                                    </colgroup>
+                                    <tbody id="gridview-1043-body">
+                                        <tr id="gridview-1043-record-ext-record-336" data-boundview="gridview-1043" data-recordid="ext-record-336"
+                                            data-recordindex="0" class="x-grid-row  x-grid-data-row" tabindex="-1">
+                                            <td class="x-grid-cell x-grid-td x-grid-cell-checkcolumn-1073 selector-column x-grid-cell-first x-unselectable selector-column">
+                                                <div unselectable="on" class="x-grid-cell-inner" style="text-align:left;">
+                                                </div>
+                                            </td>
+                                            <td class="x-grid-cell x-grid-td x-grid-cell-gridcolumn-1038 x-unselectable ">
+                                                <div unselectable="on" class="x-grid-cell-inner" style="text-align:left;">
+                                                    <a href="/client/$id"></a>
+                                                </div>
+                                            </td>
+                                            <td class="x-grid-cell x-grid-td x-grid-cell-gridcolumn-1039 x-unselectable ">
+                                                <div unselectable="on" class="x-grid-cell-inner" style="text-align:left;"></div>
+                                            </td>
+                                            <td class="x-grid-cell x-grid-td x-grid-cell-gridcolumn-1040 x-unselectable " name="phonePrimary">
+                                                <div unselectable="on" class="x-grid-cell-inner" style="text-align:left;">+584122555670</div>
+                                            </td>
+                                            <td class="x-grid-cell x-grid-td x-grid-cell-gridcolumn-1041 x-unselectable ">
+                                                <div unselectable="on" class="x-grid-cell-inner" style="text-align:left;">esto es una prueba </div>
+                                            </td>
+                                            <td class="x-grid-cell x-grid-td x-grid-cell-gridcolumn-1042 rs_disable x-grid-cell-last x-unselectable rs_disable">
+                                                <div unselectable="on" class="x-grid-cell-inner" style="text-align:center;">
+                                                    <div class="action-icons">
+                                                        <a href="/client/view/$id" alt="Ver detalle">
+                                                            <img src="/resources/images/zoom.png">
+                                                        </a>
+                                                        <a href="https://app.alegra.com/client/edit/id/1" alt="Editar">
+                                                            <img src="/resources/images/page_edit.png">
+                                                        </a>
+                                                        <img src="/resources/images/delete.png" alt="Eliminar" class="deleteClient"
+                                                            title="Eliminar">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                            </table>
+     
+                        <div class="x-toolbar green-background-toolbar x-docked x-toolbar-default x-docked-bottom x-toolbar-docked-bottom x-toolbar-default-docked-bottom x-box-layout-ct"
+                            id="pagingtoolbar-1044" style="width: 1016px; right: auto; left: 4px; top: 357px;">
+                            <div id="pagingtoolbar-1044-innerCt" class="x-box-inner " role="presentation" style="width: 1012px; height: 24px;">
+                                <div id="pagingtoolbar-1044-targetEl" class="x-box-target" style="width: 1012px;">
+                                    <div class="x-btn x-unselectable x-item-disabled x-box-item x-toolbar-item x-btn-default-toolbar-small x-disabled x-btn-disabled x-btn-default-toolbar-small-disabled x-icon x-btn-icon x-btn-default-toolbar-small-icon"
+                                        style="border-width: 1px; right: auto; left: 0px; top: 1px; margin: 0px;" id="button-1045">
+                                        <div id="button-1045-btnWrap" class="x-btn-wrap" unselectable="on">
+                                            <a id="button-1045-btnEl" class="x-btn-button" role="button" hidefocus="on" unselectable="on"
+                                                tabindex="0">
+                                                <span id="button-1045-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">&nbsp;</span>
+                                                <span role="img" id="button-1045-btnIconEl" class="x-btn-icon-el x-tbar-page-first "
+                                                    unselectable="on" style="">&nbsp;</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="x-btn x-unselectable x-item-disabled x-box-item x-toolbar-item x-btn-default-toolbar-small x-disabled x-btn-disabled x-btn-default-toolbar-small-disabled x-icon x-btn-icon x-btn-default-toolbar-small-icon"
+                                        style="border-width: 1px; right: auto; left: 24px; top: 1px; margin: 0px;" id="button-1046">
+                                        <div id="button-1046-btnWrap" class="x-btn-wrap" unselectable="on">
+                                            <a id="button-1046-btnEl" class="x-btn-button" role="button" hidefocus="on" unselectable="on"
+                                                tabindex="0">
+                                                <span id="button-1046-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">&nbsp;</span>
+                                                <span role="img" id="button-1046-btnIconEl" class="x-btn-icon-el x-tbar-page-prev "
+                                                    unselectable="on" style="">&nbsp;</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="x-toolbar-separator x-toolbar-separator-horizontal x-box-item x-toolbar-item"
+                                        style="border-width: 1px; right: auto; left: 48px; top: 5px; margin: 0px;" id="tbseparator-1047"></div>
+                                    <div class="x-toolbar-text x-box-item x-toolbar-item x-toolbar-text-default" id="tbtext-1048"
+                                        style="right: auto; left: 56px; top: 4px; margin: 0px;">Página</div>
+                                    <table class="x-field x-tbar-page-number x-table-plain x-form-item x-box-item x-toolbar-item x-field-default x-hbox-form-item x-form-dirty"
+                                        style="width: 30px; table-layout: fixed; right: auto; left: 102px; top: 1px; margin: 0px;"
+                                        cellpadding="0" id="numberfield-1049">
+                                        <tbody>
+                                            <tr id="numberfield-1049-inputRow">
+                                                <td id="numberfield-1049-labelCell" style="display:none;" valign="top" halign="left"
+                                                    width="105" class="x-field-label-cell">
+                                                    <label id="numberfield-1049-labelEl" for="numberfield-1049-inputEl" class="x-form-item-label x-unselectable x-form-item-label-left"
+                                                        style="width:100px;margin-right:5px;" unselectable="on"></label>
+                                                </td>
+                                                <td class="x-form-item-body " id="numberfield-1049-bodyEl" colspan="3" role="presentation"
+                                                    style="width: 100%;">
+                                                    <table id="numberfield-1049-triggerWrap" class="x-form-trigger-wrap x-unselectable"
+                                                        cellpadding="0" cellspacing="0" style="width: 100%; table-layout: fixed;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td id="numberfield-1049-inputCell" class="x-form-trigger-input-cell"
+                                                                    style="width: 100%;">
+                                                                    <input id="numberfield-1049-inputEl" type="text" size="1"
+                                                                        name="inputItem" value="0" class="x-form-field x-form-text"
+                                                                        autocomplete="off" aria-invalid="false" data-errorqtip=""
+                                                                        style="width: 100%;">
+                                                                </td>
+                                                                <td style="display:none" class="x-trigger-cell" id="ext-gen1176">
+                                                                    <div class="x-trigger-index-0 x-form-trigger x-form-spinner-up  "
+                                                                        role="button" id="ext-gen1174"></div>
+                                                                    <div class="x-trigger-index-1 x-form-trigger x-form-spinner-down x-form-spinner-down-disabled "
+                                                                        role="button" id="ext-gen1175"></div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="x-toolbar-text x-box-item x-toolbar-item x-toolbar-text-default" id="tbtext-1050"
+                                        style="right: auto; left: 140px; top: 4px; margin: 0px;">de 1</div>
+                                    <div class="x-toolbar-separator x-toolbar-separator-horizontal x-box-item x-toolbar-item"
+                                        style="border-width: 1px; right: auto; left: 170px; top: 5px; margin: 0px;" id="tbseparator-1051"></div>
+                                    <div class="x-btn x-unselectable x-item-disabled x-box-item x-toolbar-item x-btn-default-toolbar-small x-disabled x-btn-disabled x-btn-default-toolbar-small-disabled x-icon x-btn-icon x-btn-default-toolbar-small-icon"
+                                        style="border-width: 1px; right: auto; left: 174px; top: 1px; margin: 0px;" id="button-1052">
+                                        <div id="button-1052-btnWrap" class="x-btn-wrap" unselectable="on">
+                                            <a id="button-1052-btnEl" class="x-btn-button" role="button" hidefocus="on" unselectable="on"
+                                                tabindex="0">
+                                                <span id="button-1052-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">&nbsp;</span>
+                                                <span role="img" id="button-1052-btnIconEl" class="x-btn-icon-el x-tbar-page-next "
+                                                    unselectable="on" style="">&nbsp;</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="x-btn x-unselectable x-item-disabled x-box-item x-toolbar-item x-btn-default-toolbar-small x-disabled x-btn-disabled x-btn-default-toolbar-small-disabled x-icon x-btn-icon x-btn-default-toolbar-small-icon"
+                                        style="border-width: 1px; right: auto; left: 198px; top: 1px; margin: 0px;" id="button-1053">
+                                        <div id="button-1053-btnWrap" class="x-btn-wrap" unselectable="on">
+                                            <a id="button-1053-btnEl" class="x-btn-button" role="button" hidefocus="on" unselectable="on"
+                                                tabindex="0">
+                                                <span id="button-1053-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">&nbsp;</span>
+                                                <span role="img" id="button-1053-btnIconEl" class="x-btn-icon-el x-tbar-page-last "
+                                                    unselectable="on" style="">&nbsp;</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="x-toolbar-separator x-toolbar-separator-horizontal x-box-item x-toolbar-item"
+                                        style="border-width: 1px; right: auto; left: 222px; top: 5px; margin: 0px;" id="tbseparator-1054"></div>
+                                    <div class="x-btn x-unselectable x-box-item x-toolbar-item x-btn-default-toolbar-small x-icon x-btn-icon x-btn-default-toolbar-small-icon"
+                                        style="border-width: 1px; right: auto; left: 226px; top: 1px; margin: 0px;" id="button-1055">
+                                        <div id="button-1055-btnWrap" class="x-btn-wrap" unselectable="on">
+                                            <a id="button-1055-btnEl" class="x-btn-button" role="button" hidefocus="on" unselectable="on"
+                                                tabindex="0">
+                                                <span id="button-1055-btnInnerEl" class="x-btn-inner x-btn-inner-center" unselectable="on">&nbsp;</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="x-component x-box-item x-toolbar-item x-component-default" style="height: 0px; right: auto; left: 250px; top: 12px; margin: 0px; width: 450px;"
+                                        id="tbfill-1056"></div>
+                                    <div class="x-toolbar-text x-box-item x-toolbar-item x-toolbar-text-default" id="tbtext-1057"
+                                        style="right: auto; left: 706px; top: 4px; margin: 0px;">Mostrando 1 - 1 de 1</div>
+                                    <div class="x-toolbar-separator x-toolbar-separator-horizontal x-box-item x-toolbar-item"
+                                        style="border-width: 1px; right: auto; left: 826px; top: 5px; margin: 0px;" id="tbseparator-1059"></div>
+                                    <table class="x-field x-table-plain x-form-item x-form-dirty x-box-item x-toolbar-item x-field-default-toolbar x-hbox-form-item"
+                                        style="width: 180px; table-layout: fixed; right: auto; left: 830px; top: 2px; margin: 0px;"
+                                        cellpadding="0" id="combobox-1058">
+                                        <tbody>
+                                            <tr id="combobox-1058-inputRow">
+                                                <td id="combobox-1058-labelCell" style="" valign="top" halign="left" width="125"
+                                                    class="x-field-label-cell">
+                                                    <label id="combobox-1058-labelEl" for="combobox-1058-inputEl" class="x-form-item-label x-unselectable x-form-item-label-left"
+                                                        style="width:120px;margin-right:5px;" unselectable="on">Resultados por página</label>
+                                                </td>
+                                                <td class="x-form-item-body " id="combobox-1058-bodyEl" colspan="2" role="presentation"
+                                                    style="width: 100%;">
+                                                    <table id="combobox-1058-triggerWrap" class="x-form-trigger-wrap" cellpadding="0"
+                                                        cellspacing="0" style="width: 100%; table-layout: fixed;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td id="combobox-1058-inputCell" class="x-form-trigger-input-cell"
+                                                                    style="width: 100%;">
+                                                                    <div class="x-hide-display x-form-data-hidden" role="presentation"
+                                                                        id="ext-gen1185"></div>
+                                                                    <input id="combobox-1058-inputEl" type="text" class="x-form-field x-form-text"
+                                                                        autocomplete="off" value="20" name="pageSize" aria-invalid="false"
+                                                                        data-errorqtip="" style="width: 100%;">
+                                                                </td>
+                                                                <td valign="top" class=" x-trigger-cell x-unselectable" style="width:17px;"
+                                                                    id="ext-gen1184">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>

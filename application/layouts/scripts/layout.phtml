@@ -1,0 +1,536 @@
+
+<?php echo $this->doctype() ?>
+ <!-- En layout, Zend determina el formato en el que muestra el
+ contenido. En este caso, le indico las cabeceras y footers
+ de la app, reproduciendo el esquema que aperece en la web de 
+ alegra.com -->
+ <html xmlns="http://www.w3.org/1999/html" class="x-border-box x-strict"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KQG46G"></script><script type="text/javascript">
+/**************************************************************
+* Código para analytics manejado desde Google Tag Manager
+**************************************************************/
+
+/**
+* Variable donde se guardan y procesan acciones sobre Google Analytics y
+* etiquetas del Google Tag Manager
+*/
+window.dataLayer = window.dataLayer || [];
+
+			 dataLayer.push({
+	 'userId': '103980',
+	 'event': 'setUserId'
+ });
+
+ var analyticsDimensions = {'event': 'setDimensions'};
+						 analyticsDimensions['dimension1'] = "Plan Demo";
+						 analyticsDimensions['dimension2'] = "2017-12-06 16:38:13";
+						 analyticsDimensions['dimension3'] = "potencial";
+						 analyticsDimensions['dimension4'] = "no";
+						 analyticsDimensions['dimension5'] = "Otro";
+						 analyticsDimensions['dimension6'] = "alegra-web";
+						 analyticsDimensions['dimension7'] = "";
+						 analyticsDimensions['dimension8'] = "R\u00e9gimen com\u00fan";
+						 analyticsDimensions['dimension9'] = "";
+						 analyticsDimensions['dimension10'] = "";
+						 analyticsDimensions['dimension11'] = "";
+						 analyticsDimensions['dimension12'] = "no";
+					 dataLayer.push(analyticsDimensions);
+
+ dataLayer.push({
+	 'eventActivityAction': 'client / index',
+	 'eventActivityLabel': "103980",
+	 'event': 'eventActivity'
+ });
+
+/* Attach tracking to all download & external links */
+function _gaLt(event) {
+var el = event.srcElement || event.target;
+
+/* Loop up the DOM tree through parent elements if clicked element is not a link (eg: an image inside a link) */
+while (el && (typeof el.tagName == 'undefined' || el.tagName.toLowerCase() != 'a' || !el.href)) {
+ el = el.parentNode;
+}
+
+/* if a link with valid href has been clicked */
+if (el && el.href) {
+
+ var link = el.href;
+
+ /* Only if it is an external link */
+ if (link.indexOf(location.host) == -1 && !link.match(/^javascript\:/i)) {
+
+	 /* Is actual target set and not _(self|parent|top)? */
+	 var target = (el.target && !el.target.match(/^_(self|parent|top)$/i)) ? el.target : false;
+
+	 /* Assume a target if Ctrl|shift|meta-click */
+	 if (event.ctrlKey || event.shiftKey || event.metaKey || event.which == 2) {
+		 target = "_blank";
+	 }
+
+	 var hbrun = false; // tracker has not yet run
+
+	 /* HitCallback to open link in same window after tracker */
+	 var hitBack = function() {
+		 /* run once only */
+		 if (hbrun) return;
+		 hbrun = true;
+		 window.location.href = link;
+	 };
+
+	 if (target) { /* If target opens a new window then just track */
+		 dataLayer.push({
+			 'eventOutboundLinkAction': link,
+			 'eventOutboundLinkLabel': document.location.pathname + document.location.search,
+			 'event': 'eventOutboundLink'
+		 });
+	 } else { /* Prevent standard click, track then open */
+		 event.preventDefault ? event.preventDefault() : event.returnValue = !1;
+		 /* send event with callback */
+		 dataLayer.push({
+			 'eventOutboundLinkAction': link,
+			 'eventOutboundLinkLabel': document.location.pathname + document.location.search,
+			 'event': 'eventOutboundLink',
+			 /**
+			  * Must return a function to prevent calling it twice
+			  */
+			 'hitCallback': function() {return hitBack;}
+		 });
+
+		 /* Run hitCallback again if GA takes longer than 1 second */
+		 setTimeout(hitBack, 1000);
+	 }
+ }
+}
+}
+
+var _w = window;
+/* Use "click" if touchscreen device, else "mousedown" */
+var _gaLtEvt = ("ontouchstart" in _w) ? "click" : "mousedown";
+/* Attach the event to all clicks in the document after page has loaded */
+_w.addEventListener ? _w.addEventListener("load", function() {document.body.addEventListener(_gaLtEvt, _gaLt, !1)}, !1)
+: _w.attachEvent && _w.attachEvent("onload", function() {document.body.attachEvent("on" + _gaLtEvt, _gaLt)});
+</script>
+
+ <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+<link rel="stylesheet" type="text/css" href="/resources/css/ext-theme-gray-all2.css">
+<link type="image/x-icon" rel="shortcut icon" href="https://cdn1.alegra.com/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/resources/css/styles-min.css">
+
+			 <script type="text/javascript">
+var translate = function (str, upperCase) {
+var translateArray = [];
+translateArray = {"category":"categor\u00eda","categories":"categor\u00edas","phone":"tel\u00e9fono","identification":"identificaci\u00f3n","identificationType":"tipo de identificaci\u00f3n","theIdentification":"la","thisIdentification":"esta","inventory":"inventario","items":"items","item":"\u00edtem","journal":"ajuste de categor\u00eda","recurring":"recurrente","recurringPlural":"recurrentes","transaction":"transacci\u00f3n","transactions":"transacciones","transactionIn":"recibo de caja","transactionOut":"comprobante de egreso","transactionsIn":"recibos de caja","transactionsOut":"comprobantes de egreso","client":"contacto","clients":"contactos","creditNote":"nota cr\u00e9dito","creditNotes":"notas cr\u00e9dito","debitNote":"nota d\u00e9bito","debitNotes":"notas d\u00e9bito","estimate":"cotizaci\u00f3n","estimates":"cotizaciones","bill":"factura de proveedor","bills":"facturas de proveedor","invoice":"factura de venta","invoices":"facturas de venta","salesReport":"reporte de ventas","invoicesOpen":"reporte de cuentas por cobrar","billsOpen":"reporte de cuentas por pagar","salesByClient":"reporte de ventas por cliente","salesByItem":"reporte de ventas por item","report606":"reporte 606","report607":"reporte 607","invoicesByFreeCompanies":"facturas creadas por compa\u00f1ias gratis","associatedRemission":"asociada","includedRemission":"incluida","otherInvoice":"otra","accessLog":"log de acceso","metadataByCompanies":"metadatos de las compa\u00f1\u00edas","categoryTransactions":"transacciones de la categor\u00eda","companiesAdmin":"reporte compa\u00f1\u00edas","advance":"anticipo","advances":"anticipos","letter":"carta","half-letter":"media carta","ticket":"tirilla","mobilePhone":"celular","address":"direcci\u00f3n","reference":"referencia","theReference":"la","name":"nombre","theName":"el","CreditCard":"Tarjeta de cr\u00e9dito","DebitCard":"Cuenta bancaria","DebitCreditCard":"Tarjeta bancaria","Cash":"Efectivo","AMERICAN_EXPRESS":"American express","VISA":"Visa","MASTERCARD":"Mastercard","SAVINGS":"Cuenta de ahorros","CURRENT":"Cuenta corriente","remission":"remisi\u00f3n","remissions":"remisiones","theRemission":"la","theRemissions":"las","aRemission":"una","aRemissions":"una","associatedRemissions":"remisiones asociadas","newRemission":"nueva remisi\u00f3n","firstRemission":"primera remisi\u00f3n","ofTheRemission":"de la","remissionSent":"enviada","remissionsExport":"exportadas","prefix":"prefijo","number":"n\u00famero","thePrefix":"el","numeration":"numeraci\u00f3n","numerations":"numeraciones","resolutionText":"resoluci\u00f3n","automaticNumeration":"numeraci\u00f3n autom\u00e1tica","purchaseOrder":"orden de compra","purchaseOrders":"\u00f3rdenes de compra","newPurchaseOrder":"nueva orden de compra","retention":"retenci\u00f3n","retentions":"retenciones","customfield":"atributo adicional","customfields":"atributos adicionales","department":"departamento","city":"ciudad","district":"municipio","urbanization":"barrio","pdf.account":"cuenta","pdf.address":"direcci\u00f3n","pdf.categories":"categor\u00edas","pdf.categoryTitle":"concepto","pdf.categoryTotal":"valor","pdf.city":"ciudad","pdf.clientName":"se\u00f1or(es)","pdf.creditNote":"nota cr\u00e9dito","pdf.discount":"descuento","pdf.documentDate":"fecha","pdf.documentDeliveryDate":"fecha de entrega","pdf.documentDueDate":"fecha de vencimiento","pdf.documentExpeditionDate":"fecha de expedici\u00f3n","pdf.estimate":"cotizaci\u00f3n","pdf.identification":"identificaci\u00f3n","pdf.item":"\u00edtem","pdf.itemPrice":"precio","pdf.number":"n\u00famero","pdf.numberUndefined":"indefinido","pdf.paymentMethod":"m\u00e9todo de pago","pdf.phone":"tel\u00e9fono","pdf.phoneShort":"tel","pdf.price":"precio","pdf.purchaseOrder":"orden de compra","pdf.quantity":"cantidad","pdf.remission":"remisi\u00f3n","pdf.retentions":"retenciones","pdf.serviceOrder":"orden de servicio","pdf.signatureMadeBy":"elaborado por","pdf.signatureSignedBy":"aceptada, firma y\/o sello y fecha","pdf.subSubTotal":"subtotal","pdf.subTotal":"subtotal","pdf.transactionIn":"recibo de caja","pdf.transactionOut":"comprobante de egreso","pdf.total":"total","statement":"estado de cuenta cliente","documentType":"tipo de documento","creation":"creaci\u00f3n","due":"vencimiento","overdueDays":"d\u00edas vencidos","status":"estado","total":"total","amountPaid":"pagado","totalPaid":"total pagado","balance":"saldo","missingAmount":"por pagar","actions":"acciones","unapplied":"por aplicar","unpaid":"por pagar","paid":"pagado","checkingPayment":"verificando pago","footerStatement":"Con Alegra Ganas Tiempo y Tranquilidad","discover":"descubre","messageWithoutResults":"El cliente no tiene documentos asociados","results":"resultados","withFilters":"con filtros","helpText":"si necesitas ayuda para ver el estado de cuenta haz clic","notifyPayment":"notificar pago","notificationPaid":"notificaci\u00f3n pago","alreadyPaid":"\u00bfYa has pagado este documento?","yourEmail":"tu correo","emailSendNotification":"correo de quien env\u00eda la notificaci\u00f3n","send":"enviar","viewDocument":"ver documento","providerPayments":"payU","externalPayments":"pagos en l\u00ednea","anErrorOcurred":"Ha ocurrido un error","invalidAccess":"Acceso invalido","transactionState":"Estado de la transacci\u00f3n","pay":"pagar en l\u00ednea","brokenLink":"tu enlace caduc\u00f3","expiredLink":"si quieres saber m\u00e1s acerca del estado de cuenta cliente haz clic","requestNewLink":"generar uno nuevo","here":"aqu\u00ed","subject":"asunto","message":"mensaje","email":"correo","overdueLessThan30":"vencidas 30 d\u00edas o menos","overdueBetween30":"vencidas 31 d\u00edas a 60 d\u00edas","overdueBetween60":"vencidas 61 d\u00edas a 90 d\u00edas","overdueMore91":"vencidas 91+","notOverdue":"no vencidas","newWarehouse":"nueva bodega","newWarehouses":"nuevas bodegas","warehouse":"bodega","warehouses":"bodegas","firstWarehouse":"primera bodega","theWarehouse":"la","aWarehouse":"una","sameWarehouse":"misma bodega","theAssociatedWarehouse":"la bodega asociada","toTheWarehouse":"a la bodega","otherWarehouse":"otra bodega","openCreditNote":"abierta","voidCreditNote":"anulada","openJournal":"abierto","voidJournal":"anulado","associatedCreditNotes":"asociadas","appliedCreditNotes":"aplicadas","stamp":"emitir","stamped":"emitido","stampedInvoice":"emitida","stampedCreditNote":"emitida","stampedInvoices":"emitidas","stampedCreditNotes":"emitidas","pastStamp":"emiti\u00f3","theGovernmentEntity":"la","governmentEntity":"entidad gubernamental","electronicNumeration":"numeraci\u00f3n electr\u00f3nica","stampDocuments":"comprobantes electr\u00f3nicos","identificationCompany":"identificaci\u00f3n","theIdentificationCompany":"la","newInvoice":"nueva","theInvoice":"la","theInvoices":"las","invoiceHalf":"factura","invoicesHalf":"facturas","ofTheInvoice":"de la","ofTheInvoices":"de las","anInvoice":"una","openInvoice":"abierta","openInvoices":"abiertas","closedInvoice":"cerrada","voidInvoice":"anulada","recurringInvoices":"facturas recurrentes","invoiceEmailed":"enviada","toTheInvoice":"a la "};
+var translatedString = translateArray[str];
+if (!translatedString) {
+ translatedString = str;
+}
+if (upperCase) {
+ translatedString = translatedString.charAt(0).toUpperCase() + translatedString.slice(1);
+}
+return translatedString;
+};
+</script>
+<!-- JQuery --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- JQuery-->
+<!-- modernizr js--> <script src="/resources/js/modernizr-2.6.2.min.js"></script> <!-- modernizr js-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <!-- <title>ALEGRA: CCA (Client Consulting Application)</title> -->
+	<meta name="description" content="Aplicación de Consulta a Cliente para Alegra.com">
+	
+<style>
+
+/* Pre-effect */
+p {
+    line-height: 1.33em;
+    color: #7E7E7E;
+}
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader {
+    background-image: url("/resources/images/logo1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 180px;
+    height: 180px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+      -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 4s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite; 
+}
+  @-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  50% {opacity:1;}
+  100% {opacity: 0;}
+  }
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  50% {opacity:1;}
+  100% {opacity: 0;}
+  } 
+/* post-effect */
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222222;
+    z-index: 1000;
+}
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+h1 {
+    color: #EEEEEE;
+}
+/* Loaded */
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);  /* IE 9 */
+    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+}
+ 
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);  /* IE 9 */
+    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+}
+.loaded #loader-wrapper .loader-section.section-right,
+.loaded #loader-wrapper .loader-section.section-left {
+ 
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out; 
+            transition: all 0.3s ease-out;
+}
+.loaded #loader-wrapper {
+    visibility: hidden;
+            -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+ 
+        -webkit-transition: all 0.3s 1s ease-out; 
+                transition: all 0.3s 1s ease-out;
+}
+/* THE BAD DOGE */
+.intro{width:100%;
+    position:relative;
+    height:auto;
+}
+#intro.intro{padding:-5% 0 0}
+.intro .apptitle{text-align:center}
+.intro .page-scroll{text-align:center}
+.intro-text{font-size:18px}
+.intro .apptitle h2{color:rgb(76, 146, 179);text-shadow:none;font-size:60px;line-height:60px;font-weight:700;font-family:Montserrat,sans-serif;background-color:rgba(0,0,0,0);text-decoration:none;text-transform:uppercase;border-width:0;border-color:#000;border-style:none;text-shadow:-1px 0 1px #000}
+.intro .apptitle h4{color:#fff;text-shadow:-1px 1px 1px #000}
+.intro{height:100%;padding:0}.brand-heading{font-size:100px}.intro-text{font-size:25px}}
+</style>
+
+<script type="text/javascript" src="/resources/js/Big.min.js"></script>
+<script type="text/javascript" src="/resources/js/ext-all.js"></script>
+ <script type="text/javascript" src="/resources/js/app-all.js"></script>
+
+<script type="text/javascript" src="/resources/js/ext-lang-es.js"></script>
+<script>
+AL.config.idCompany = 103980;
+AL.config.decimalPrecision = 2;
+AL.config.currentKeyCountry = 'other';
+var applyFormat = function () {
+/* Configuaración de separador decimal y fechas */
+Ext.apply(Ext.util.Format, {
+ thousandSeparator: ',',
+ decimalSeparator: '.',
+ currencySign: '$',
+ // Spanish Euro
+ dateFormat: 'd/m/Y'
+
+});
+
+Ext.util.Format.usMoney = function (value, precision, currencySign) {
+ var endSign = false;
+ var sign = currencySign ? currencySign : null;
+
+ if (sign) {
+	 if (sign == '€') {
+		 endSign = true;
+	 }
+ } else {
+	 if ('$' == '€') {
+		 endSign = true;
+	 }
+ }
+ precision = parseInt(precision);
+ /*
+  * Toca verificar que la precisión sea un número mayor o igual a
+  * cero
+  */
+ var decimalPrecision = (precision === 0 || precision > 0) ? precision : AL.config.decimalPrecision;
+
+ value = AL.math.approx(value, null, decimalPrecision);
+
+ return Ext.util.Format.currency(value, sign, decimalPrecision, endSign);
+};
+/* Termina configuración decimal y de fechas */
+};
+applyFormat();
+Ext.onReady(function () {
+Ext.define("Ext.locale.es.form.field.Number", {
+ override: "Ext.form.field.Number",
+ decimalSeparator: ".",
+ decimalPrecision: 2
+});
+
+applyFormat();
+});
+
+
+/**
+* @class Ext.override.app.EventDomain
+* @override Ext.app.EventDomain
+* Override for MVC Controllers to support suspendEvents.
+*/
+Ext.define('Ext.override.app.EventDomain', {
+override: 'Ext.app.EventDomain',
+/**
+* @inheritdoc
+*/
+constructor: function () {
+ this.callParent(arguments);
+ this.eventQueue = {};
+},
+/**
+* @inheritdoc
+*/
+monitor: function (observable) {
+ this.callParent(arguments);
+ this.applyPrototypeMembers(observable);
+},
+/**
+* Override prorotype functions
+* @param {Ext.util.Observable/Ext.Class} observable
+* @private
+*/
+applyPrototypeMembers: function (observable) {
+ var domain = this,
+	 prototype = observable.isInstance ? observable : observable.prototype,
+	 resumeEvents = prototype.resumeEvents;
+
+ prototype.resumeEvents = function (ev, args) {
+	 var ret = resumeEvents.apply(this, arguments);
+
+	 domain.resumeQueuedEvents(this);
+
+	 return ret;
+ };
+},
+/**
+* @inheritdoc
+*/
+dispatch: function (target, ev, args) {
+ // don't dispatch if suspended
+ if (target.eventsSuspended) {
+	 // Queue them when queued via target.suspendEvents(true)
+	 if (!!target.eventQueue) {
+		 target.domainEventQueue = target.domainEventQueue || [];
+		 target.domainEventQueue.push([target, ev, args]);
+	 }
+	 return true;
+ }
+ return this.callParent(arguments);
+},
+/**
+* Called every resumeEvents on an Observable.
+* Fire queued events if available.
+* @private
+*/
+resumeQueuedEvents: function (target) {
+ var me = this,
+	 queue = target.domainEventQueue,
+	 i = 0,
+	 len;
+ if (queue)
+	 for (len = queue.length; i < len; i++)
+		 me.dispatch.apply(me, queue[i]);
+ delete target.domainEventQueue;
+}
+}, function () {
+var type,
+ inst = Ext.app.EventDomain.instances,
+ i,
+ len;
+for (type in inst)
+ if (inst.hasOwnProperty(type)) {
+	 inst[type].eventQueue = {};
+	 for (i = 0, len = inst[type].monitoredClasses.length; i < len; i++)
+		 inst[type].applyPrototypeMembers(inst[type].monitoredClasses[i]);
+ }
+});
+</script>
+
+ <!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim || (function (d, s) {
+ var z = $zopim = function (c) {
+	 z._.push(c)
+ }, $ = z.s =
+	 d.createElement(s), e = d.getElementsByTagName(s)[0];
+ z.set = function (o) {
+	 z.set.
+		 _.push(o)
+ };
+ z._ = [];
+ z.set._ = [];
+ $.async = !0;
+ $.setAttribute('charset', 'utf-8');
+ $.src = '//v2.zopim.com/?2ORQCeJ8f1chNNdMX4JaNU1Ii78MbXAc';
+ z.t = +new Date;
+ $.
+	 type = 'text/javascript';
+ e.parentNode.insertBefore($, e)
+})(document, 'script');
+
+$zopim(function () {
+ $zopim.livechat.addTags('plan:' + 'Plan Demo', 'pais:' + 'Otro', 'idCompañía:' + '103980', 'perfil:' + 'Administrador', 'fecha-registro:' + '2017-12-06 16:38:13', 'Demo');
+ $zopim.livechat.setLanguage('es');
+
+ $zopim.livechat.setName(' - The Bad Doge');
+
+ $zopim.livechat.setEmail('jo.an.pereira@outlook.com');
+
+ var canChat = 'yes';
+
+ if (canChat == 'no') {
+	 $zopim.livechat.hideAll();
+ }
+
+ /*
+  * Se verifica el estado del caht, es deci, si hay algún agente
+  * disponible, si lohay se muestra la ventana a los que pueden ,
+  * chatear si no, se oculta para que no salga nada ni la pestaña
+  * ni nada si no hay nadie disponible
+  */
+ $zopim.livechat.setOnStatus(changeStatus);
+
+ function changeStatus(status) {
+
+
+	 if (status == 'offline') {
+		 /*
+		  * Si se está en una conversación, no se debe esconder la pantalla
+		  */
+		 if (!$zopim.livechat.isChatting()) {
+			 $zopim.livechat.hideAll();
+		 }
+
+		 if ($zopim.livechat.isChatting()) {
+			 $zopim.livechat.window.show();
+		 }
+
+	 } else if (status == 'online') {
+		 /*
+		  * Si no puede chattear se esconde al ventana de chat.  Se hace así
+		  * y no escondiendola desde la configuración del widget en zendesk,
+		  * porque si se muestra con show, sale la ventana del chat abierta
+		  * y no la pestaña pequeña.
+		  * Se pone en el else hide, para que me la muestre pero cerrada
+		  */
+		 if (canChat == 'no') {
+			 $zopim.livechat.hideAll();
+		 } else {
+			 /*
+			  * Si no tenía la ventana abierta entonces que se muestre pero
+			  * escondida, si estaba abierta no se hace nada para que cuando
+			  * navegue en la pagina me salga abierta (si tengo un chat)
+			  */
+			 if (!$zopim.livechat.window.getDisplay()) {
+				 $zopim.livechat.window.hide();
+			 }
+
+
+		 }
+	 }
+
+ }
+
+
+});
+</script>
+<!--End of Zopim Live Chat Script-->
+<title>Contactos</title>                
+
+<style media="print" class="jx_ui_StyleSheet" __jx__id="___$_2" type="text/css">.zopim { display: none !important }</style></head>
+<body id="contact-index" class="x-body x-webkit x-chrome"><div class="zopim" __jx__id="___$_65 ___$_65" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000002; width: 185px; height: 30px; right: 10px; bottom: 0px; display: none;" data-test-id="ChatWidgetButton"><iframe frameborder="0" src="/resources/saved_resource.html" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;" data-test-id="ChatWidgetButton-iframe"></iframe></div><div class="zopim" __jx__id="___$_4 ___$_4" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000001; right: 10px; bottom: 0px; border-top-left-radius: 5px; border-top-right-radius: 5px; display: none; width: 290px; height: 400px; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 2px;" data-test-id="ChatWidgetWindow"><iframe frameborder="0" src="/resources/saved_resource(1).html" data-test-id="ChatWidgetWindow-iframe" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;"></iframe></div>
+			 <!-- Google Tag Manager (noscript) -->
+<noscript>&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQG46G"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="main-container">
+<div style=" " class="header-wrapper">
+
+<div id="membership-notifications-wrapper" class="trial" data-user="113574">
+<div class="membership-notification priority-low">
+<div class="header">
+ <div class="title">
+ </div>
+</div>
+<div class="footer"></div>
+</div>
+</div>
+ <div id="hints-wrapper-top">
+				 </div>
+
+<body>
+
+<div id="loader-wrapper">
+    <div id="loader">
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<div class="fullscreen-bg">
+    <video loop muted autoplay poster="" class="fullscreen-bg__video">
+        <source src="resources/images/background.webm" type="video/webm">
+    </video>
+</div>
+
+<?php echo $this->render('header.html'); ?>
+
+<div id="main" >
+
+<?php  echo $this->layout()->content; ?>
+
+</div>
+
+<?php echo $this->render('footer.html'); ?>
+
+<script src="/resources/js/main.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/resources/js/jquery-1.9.1.min.js"><\/script>')</script>
+</body>
+</html> 
+
+
